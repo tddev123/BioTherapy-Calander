@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./DayColumn.css";
-import { Appointment } from "./Scheduler";
+
 import { useNavigate } from "react-router-dom";
 
 interface DayColumnProps {
@@ -18,7 +18,6 @@ const DayColumn: React.FC<DayColumnProps> = ({
   date,
   day,
   appointments,
-  onAdd,
   onRemove,
   isCurrentMonth,
   availableTimes,
