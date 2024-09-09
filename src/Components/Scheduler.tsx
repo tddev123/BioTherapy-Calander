@@ -11,7 +11,7 @@ import {
   subMonths,
   format,
 } from "date-fns";
-
+import { Appointment } from "./Scheduler"; // Ensure correct import
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -156,3 +156,4 @@ const Scheduler: React.FC = () => {
 };
 
 export default Scheduler;
+
