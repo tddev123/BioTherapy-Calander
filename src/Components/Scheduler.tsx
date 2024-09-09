@@ -15,6 +15,13 @@ import {
 import Header from "./Header";
 import Footer from "./Footer";
 
+export interface Appointment {
+  id: number;
+  date: string;
+  time: string;
+  therapyType?: string; // Optional, depending on your use case
+}
+
 export interface Availability {
   [date: string]: string[]; // Example: { '2024-08-07': ['08:00', '09:00', '10:00'] }
 }
