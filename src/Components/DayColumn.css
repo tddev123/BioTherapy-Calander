@@ -1,0 +1,142 @@
+.day-column {
+  background-color: white;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px; /* Adjusted padding */
+  position: relative;
+}
+
+.day-column.other-month {
+  color: #a0a0a0; /* Grey text color */
+  background-color: #e0e0e0; /* More pronounced grey background */
+  border: 1px solid #b0b0b0; /* Slightly darker grey border */
+  opacity: 0.4; /* Increased opacity for more shading */
+}
+
+/* Hide availability button on other-month days */
+.day-column.other-month .availability-button {
+  display: none;
+}
+
+.day-label {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.availability-button {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.available {
+  background-color: #28a745;
+  color: white;
+}
+
+.unavailable {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Overlay to grey out the background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.612); /* Greyed-out background */
+  z-index: 999; /* Positioned below the popup */
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Positioned above the overlay */
+  width: 600px; /* Width of the popup */
+  padding: 20px; /* Added padding */
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.popup-header .popup-date {
+  font-size: 20px;
+  margin-left: 40PX;
+  font-weight: 500;
+  flex: auto;
+  justify-items: center;
+}
+
+.popup-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 15px; /* Space between columns */
+  padding: 10px 0;
+}
+
+.time-option {
+  cursor: pointer;
+  padding: 10px; /* Increased padding for better fit */
+  border: 1px solid #000000;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.time-option.selected {
+  background-color: #007bff; /* Highlight selected time */
+  color: white;
+}
+
+.time-option.selected:hover {
+  background-color: #007bff; /* Highlight selected time */
+  color: white;
+}
+
+.time-option:hover {
+  background-color: #cdcaca;
+}
+
+.confirm-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-popup {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px 15px; /* Adjusted padding */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  background-color: #cb0101;
+}

@@ -1,0 +1,39 @@
+/* src/TimeSlot.css */
+.time-slot {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .appointment {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .appointment button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  

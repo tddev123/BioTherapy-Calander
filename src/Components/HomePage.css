@@ -1,0 +1,23 @@
+.homepage-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .therapy-buttons {
+    margin-top: 20px;
+  }
+  
+  .therapy-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .therapy-buttons button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,29 @@
+/* src/Scheduler.css */
+.scheduler-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scheduler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.scheduler {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #ddd;
+}
+
+.scheduler-day-label {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
