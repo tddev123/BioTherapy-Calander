@@ -1,7 +1,7 @@
 // src/TimeSlot.tsx
 import React from "react";
 import "./TimeSlot.css";
-import { Appointment } from "./Scheduler";
+
 
 interface TimeSlotProps {
   time: string;
